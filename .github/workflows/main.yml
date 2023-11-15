@@ -23,6 +23,8 @@ jobs:
         run: dotnet restore CleancodeTest/CleancodeTests.sln
       - name: Build
         run: dotnet build CleancodeTest/CleancodeTests.sln
-      - name: Test with the dotnet CLI
+      - name: Test with BankAccount
         run: dotnet test BankAccount.Test/BankAccount.Test.csproj
+      - name: Test with NumberVerifier
+        run: dotnet test NumberVerifier.Test/NumberVerifier.Test.csproj
     
