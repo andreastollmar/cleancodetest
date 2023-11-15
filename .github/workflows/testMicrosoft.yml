@@ -1,0 +1,29 @@
+name: My Workflow for MS
+
+on: workflow_dispatch
+
+jobs:
+  my-test-job:
+    runs-on: windows-latest
+    steps:
+      - run: echo "The testjob has started"
+      - run: echo "this was run on ${{runner.os}}"
+      - run: echo "started in ${{github.repository}} on ${{github.ref_name}} branch"
+      - run: echo "the testjob is complete"
+
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+      - name: Install dependencies
+        run: dotnet restore CleancodeTest/CleancodeTests.sln
+      - name: Build
+        run: dotnet build CleancodeTest/CleancodeTests.sln
+      - name: Test with BankAccount
+        run: dotnet test BankAccount.Test/BankAccount.Test.csproj
+      - name: Test with NumberVerifier
+        run: dotnet test NumberVerifier.Test/NumberVerifier.Test.csproj
