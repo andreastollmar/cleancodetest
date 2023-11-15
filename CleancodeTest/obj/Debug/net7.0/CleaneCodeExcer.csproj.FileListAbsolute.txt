@@ -1,0 +1,14 @@
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\bin\Debug\net7.0\CleaneCodeExcer.exe
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\bin\Debug\net7.0\CleaneCodeExcer.deps.json
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\bin\Debug\net7.0\CleaneCodeExcer.runtimeconfig.json
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\bin\Debug\net7.0\CleaneCodeExcer.dll
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\bin\Debug\net7.0\CleaneCodeExcer.pdb
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.AssemblyInfoInputs.cache
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.AssemblyInfo.cs
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.csproj.CoreCompileInputs.cache
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.dll
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\refint\CleaneCodeExcer.dll
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.pdb
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\CleaneCodeExcer.genruntimeconfig.cache
+C:\Users\andre\NumberVerifierTest\CleancodeÖvningar\obj\Debug\net7.0\ref\CleaneCodeExcer.dll
