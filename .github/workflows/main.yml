@@ -25,9 +25,9 @@ jobs:
       - name: Install dependencies
         run: dotnet restore CleancodeTest/CleancodeTests.sln
       - name: Build
-        run: dotnet build CleancodeTest/CleancodeTests.sln
+        run: dotnet build CleancodeTest/CleancodeTests.sln --no-restore
       - name: Test with BankAccount
-        run: dotnet test BankAccount.Test/BankAccount.Test.csproj
+        run: dotnet test BankAccount.Test/BankAccount.Test.csproj --no-build
       - name: Test with NumberVerifier
-        run: dotnet test NumberVerifier.Test/NumberVerifier.Test.csproj
+        run: dotnet test NumberVerifier.Test/NumberVerifier.Test.csproj --no-build
     
