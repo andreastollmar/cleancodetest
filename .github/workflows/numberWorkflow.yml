@@ -1,0 +1,10 @@
+name: NumberWorkflow
+on:
+  workflow_dispatch:
+    inputs:
+      get_number_from_user:
+        description: 'Enter a number'
+        required: true
+        type: number
+        default: '0'
+        
