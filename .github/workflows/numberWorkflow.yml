@@ -23,10 +23,13 @@ jobs:
         if: inputs.get_number_from_user < 7
 
       - name: testing env veriable
-        run: echo "The env var is set to INPUT_NUMBER_FROM_USER witch is set to ${{ inputs.get_number_from_user }}"
+        run: echo "The env var is set to $INPUT_NUMBER_FROM_USER witch is set to ${{ inputs.get_number_from_user }}"
 
       - name: bash Script
         shell: bash
         run: |
           echo "Hello, i may fail by reading the env var INPUT_NUMBER_FROM_USER wich is set to ${{ inputs.get_number_from_user }}"
+          if [ 2 = $INPUT_NUMBER_FROM_USER ]; then
+            exit 42
+          fi
         
