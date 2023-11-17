@@ -23,5 +23,5 @@ jobs:
         if: inputs.get_number_from_user < 7
 
       - name: testing env veriable
-        run: echo "The env var is set to INPUT_NUMBER_FROM_USER "
+        run: echo "The env var is set to INPUT_NUMBER_FROM_USER witch is set to ${{ inputs.get_number_from_user }}"
         
