@@ -28,8 +28,10 @@ jobs:
       - name: bash Script
         shell: bash
         run: |
-          echo "Hello, i may fail by reading the env var INPUT_NUMBER_FROM_USER wich is set to ${{ inputs.get_number_from_user }}"
-          if [ 2 = $INPUT_NUMBER_FROM_USER ]; then
+          echo "Hello, i may fail by reading the env var $MY_MAPPED_ENV_VAR wich is set to ${{ inputs.get_number_from_user }}"
+          if [ 2 = $MY_MAPED_ENV_VAR ]; then
             exit 42
           fi
+        env:
+          MY_MAPPED_ENV_VAR: ${{ inputs.get_number_from_user }}
         
