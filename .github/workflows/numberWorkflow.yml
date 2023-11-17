@@ -7,4 +7,21 @@ on:
         required: true
         type: number
         default: '0'
+
+jobs:
+  the-standard-job:
+    runs-on: ubuntu-latest
+    env:
+      INPUT_NUMBER_FROM_USER: ${{ inputs.get_number_from_user }}
+    steps:
+      - name: number > 7 as input
+        if: inputs.get_number_from_user > 7
+        run: echo "input was greater than 7"
+
+      - name: number less than 7 as input
+        run: echo "input was lower than 7 :("
+        if: inputs.get_number_from_user < 7
+
+      - name: testing env veriable
+        run: echo "The env var is set to INPUT_NUMBER_FROM_USER "
         
