@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: number > 7 as input
         if: inputs.get_number_from_user > 7
-        run: echo "input was greater than 7"
+        run: echo "input was greater than 7 ${{ secrets.MY_REAL_NAME }}"
 
       - name: number less than 7 as input
         run: echo "input was lower than 7 :("
